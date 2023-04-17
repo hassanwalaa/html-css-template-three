@@ -1005,6 +1005,11 @@ a {
   -moz-transition: var(--main-tarnsition);
   -ms-transition: var(--main-tarnsition);
   -o-transition: var(--main-tarnsition);
+  width: 0%;
+}
+.skills .container .info span.move {
+  animation: widthIncrease 4s linear forwards;
+  -webkit-animation: widthIncrease 4s linear forwards;
 }
 
 /* end skill */
@@ -1916,6 +1921,14 @@ a {
   }
   50% {
     background-image: url("../imgs/discount-background2.jpg");
+  }
+}
+@keyframes widthIncrease {
+  from {
+    width: 0;
+  }
+  to {
+    width: attr(data-progress);
   }
 }
 /* end animation */
